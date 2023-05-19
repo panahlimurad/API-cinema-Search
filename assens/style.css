@@ -1,0 +1,154 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;  
+    font-family: 'Rubik', sans-serif;
+
+}
+
+:root {
+    --main-color:#0f171e;
+    --asisstant-color:#1a242e;
+}
+
+
+/* Header */
+header{
+    background-color: var(--asisstant-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+header input {
+    font-size: 25px;
+    width: 35%;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 3px;
+    background-color: var(--main-color);
+}
+
+::placeholder {
+   text-align: center; 
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #C1D0B5;
+    transition: 0.5s;
+    color: #fff;
+}
+
+header button {
+    font-size: 20px;
+    width: 10%;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 5px;
+}
+
+/* Main */
+
+
+main {
+    background-color: var(--main-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card {
+    background-color: brown;
+    width: 300px;
+    margin: 20px;
+    /* flex-grow: 1; */
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.8) ;
+}
+
+.card img {
+    width: 100%;
+}
+
+.aboutFilm {
+    color: #fff;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.aboutFilm h1 {
+    font-size: 25px;    
+}
+
+.aboutFilm h2 span {
+    background-color: var(--asisstant-color);
+    margin-right: 10px;
+    border-radius: 5px;
+    padding: 2px;
+    font-size: 80%;
+}
+
+.overview {
+    background-color: #566b84;
+    color: #111;
+    position: absolute;
+    transform: translateY(100%);
+    overflow-y: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-height: 100%;
+    padding: 20px;
+    transition: transform 0.5s ease-in;
+}
+
+.card:hover .overview {
+    transform: translateY(0);
+}
+
+.overview h3{
+    border-bottom: 1px solid #fff;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--asisstant-color);
+}
+
+.pageEnd {
+    display: flex;
+    justify-content: center;
+}
+
+.pageEnd ul {
+    list-style-type: none;
+    margin-top: 50px;
+    color: #fff;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pageEnd ul li {
+    cursor: pointer;
+}
+
+footer p {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
