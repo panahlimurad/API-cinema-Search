@@ -46,7 +46,11 @@ function showMovie(data) {
         let randomRating = mainRating.toFixed(1)
 
         return `<div class="card">
-        <img src="${poster + poster_path}"/>
+        <img src="${
+          poster_path === null
+            ? "./assens/img/cinema2.jpg"
+            : poster + poster_path
+        }"/>
         <div class="aboutFilm">
         <h1>${original_title}</h1>
         <h2><span>${randomRating}</span></h2>
@@ -76,7 +80,6 @@ buttonMovie.addEventListener("click", function () {
         })
           .then((data) => {
               showMovie(data.results);
-              console.log(data);
         })
         .catch((err) => {
          console.log("err", err);
