@@ -63,6 +63,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    min-height: 100vh;
 }
 
 .card {
@@ -73,6 +74,7 @@ main {
     overflow: hidden;
     position: relative;
     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.8) ;
+    /* display: flex; */
 }
 
 .card img {
@@ -150,5 +152,13 @@ footer p {
     font-size: 20px;
     text-align: center;
     margin-top: 40px;
+}
+
+.errorMessage {
+    color: #fff;
+    padding: 20px;
+    border-bottom: 2px solid #fff;
+    margin-top: 25%;
+    display: none;
 }
 
