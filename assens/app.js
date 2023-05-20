@@ -48,7 +48,7 @@ function showMovie(data) {
         return `<div class="card">
         <img src="${
           poster_path === null
-            ? "./assens/img/cinema2.jpg"
+            ? "../assens/img/cinema2.jpg"
             : poster + poster_path
         }"/>
         <div class="aboutFilm">
